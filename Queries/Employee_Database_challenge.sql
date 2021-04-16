@@ -35,6 +35,10 @@ FROM unique_titles
 GROUP BY title
 ORDER BY count DESC;
 
+SELECT * FROM employees
+JOIN dept_emp
+	ON employees.emp_no = dept_emp.emp_no
+WHERE employees.emp_no = 10011;
 
 -- DELIVERABLE 2
 -- Create table that contains the employee number, first and last name, birth date, from_date, to_date and title
@@ -53,8 +57,6 @@ FROM employees AS e
 		ON e.emp_no = de.emp_no
 	INNER JOIN titles AS t
 		ON e.emp_no = t.emp_no
-WHERE (de.to_date = '9999-01-01')
-AND (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
-ORDER BY e.emp_no ASC, to_date DESC;
-
-
+WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+AND (de.to_date = '9999-01-01')
+ORDER BY e.emp_no ASC, de.to_date DESC;

@@ -8,11 +8,20 @@
 - Software:  PostgreSQL 11, PgAdmin 4 
 
 ## Results of the Analysis
-The analysis of the workforce of Pewlett Hackard shows that there are currently 
+Based on the prompt from the Module 7 Challenge prompt for Deliverable 1, the outcome of the expected query is flawed.  As seen in the images below the total eligible retiree numbers are significantly overstated.  This is due to the fact that the former employees are not filtered out at the beginning of the process.
+
+
+![retirement_titles_query.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles_query.png)
 
 ![retirement_titles.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles.png)
 
-![retirement_titles_query.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles_query.png)
+**Adjusted outcome**
+
+![retirement_titles_adjusted_query.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles_adjusted_query.png)
+
+![retirement_titles_adjusted.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles_adjusted.png)
+
+
 
 
 ![unique_titles.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/unique_titles.png)

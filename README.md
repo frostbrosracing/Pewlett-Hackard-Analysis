@@ -1,15 +1,11 @@
-# Pewlett-Hackard-Analysis
-
-# A Repository for Collecting Weather Data and Travel Routes for Vacation Planning Using APIs
-
-## Project Overview
+# An Analysis of Eligible Retirees for Pewlett Hackard
 
 #### Resources
-- Data was collected from OpenWeatherMap.org through the use of an API **(Application Programming Interface)** key
-- An API key was generated from Google Cloud Platform in order to use the Maps, Places, and Directions APIs
-- Software: Python 3.7.9, Jupyter Notebook 6.1.4, Pandas 1.1.3, Numpy 1.17.0
+- PostgreSQL 11
+- PgAdmin 4 
+- departments.csv, employees.csv, dept_manager.csv, salaries.csv, titles.csv, dept_emp.csv
 
-#### The goal of this project was to collect city specific weather data that would allow users to select a range of vacation destinations based on desired weather conditions.
+#### The goal of this project was to assist the human resources department of Pewlett Hackard det
 The following steps were conducted in order to generate a final vacation itinerary for travelers.
 1.  A list of **779** cities resulted from running 2,000 ***randomly*** generated coordinates through the **citipy** module, which identifies the closest city to a given set of coordinates. 
 2.  An API call made to **OpenWeatherMap.org** collected each city's geographic coordinates and weather conditions in **JSON (JavaScript Object Notation)** format. This information was then parsed and added to a **Pandas** DataFrame, trimmed to a list of **715** located cities, and written to a *.csv* file.

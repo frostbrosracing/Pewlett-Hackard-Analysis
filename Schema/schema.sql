@@ -38,6 +38,13 @@ CREATE TABLE titles (
  	to_date DATE NOT NULL,
  	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 );
+CREATE TABLE titles2 (
+ 	emp_no INT NOT NULL,
+ 	title VARCHAR(50) NOT NULL,
+ 	from_date DATE NOT NULL,
+ 	to_date DATE NOT NULL,
+ 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
+);
 CREATE TABLE dept_emp (
  	emp_no INT NOT NULL,
  	dept_no VARCHAR(4) NOT NULL,

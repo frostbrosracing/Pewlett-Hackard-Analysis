@@ -11,13 +11,17 @@
 Based on the prompt from the Module 7 Challenge prompt for Deliverable 1, the outcome of the expected query is flawed.  As seen in the images below the total eligible retiree numbers are significantly overstated.  This is due to the fact that the former employees are not filtered out at the beginning of the process.  In the first pair of images shown below, the expected results are generated according to the screenshot of the query.
 
 **Expected outcome**
+
 ![retirement_titles_query.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles_query.png)
 
 ![retirement_titles.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles.png)
 
 In this second pair of images, it is clear that in the first 10 rows of results a former employee is listed in what should be an employee list of retirement eligible employees.  The query in the screenshot below the first 10 lines of resluts shows employee number **10011** who is no longer employeed by Pewlett Hackard.  This is just a single instance pointing to the fact that the expected results are flawed and need to be reconsidered before any further evaluation.  To further show that this employee is no longer employed with Pewlett Hackard, the employee details are shown with the "to_date" indicating a departure from the company on 11/09/1996.
 
+![Mary_Sluis_former_employee.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/Mary_Sluis_former_employee.png)
+
 **Adjusted outcome**
+
 ![retirement_titles_adjusted_query.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles_adjusted_query.png)
 
 ![retirement_titles_adjusted.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles_adjusted.png)

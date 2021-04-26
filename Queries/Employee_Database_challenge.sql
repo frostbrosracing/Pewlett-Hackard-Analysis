@@ -30,7 +30,7 @@ ORDER BY emp_no ASC, to_date DESC;
 -- Create table to retrieve the number of employees by their most recent job title who are about to retire
 -- and save as "retiring_titles.csv"
 SELECT COUNT (title), title
--- INTO retiring_titles
+INTO retiring_titles
 FROM unique_titles
 GROUP BY title
 ORDER BY count DESC;
@@ -47,7 +47,7 @@ SELECT DISTINCT ON (e.emp_no) e.emp_no,
 	de.from_date,
 	de.to_date,
 	t.title
--- INTO mentorship_eligibility
+INTO mentorship_eligibility
 FROM employees AS e
 	INNER JOIN dept_emp AS de
 		ON e.emp_no = de.emp_no

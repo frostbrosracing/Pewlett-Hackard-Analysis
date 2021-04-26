@@ -26,37 +26,21 @@ In this second pair of images, it is clear that in the first 10 rows of results 
 
 ![retirement_titles_adjusted.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/retirement_titles_adjusted.png)
 
-
+This adjustment shows the former employee no longer listed along with the current employees who are retirement eligible.
 
 
 ![unique_titles.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/unique_titles.png)
 
 ![unique_titles_query.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/unique_titles_query.png)
 
+Included below is a comparison of the actual current total employees along with the expected results for retirement eligible employees from Deliverable 1, and the adjusted retirement eligible employees as filtered with the "to_date" set to "9999-01-01"
 ![employee_numbers_comparison.png](https://github.com/frostbrosracing/Pewlett-Hackard-Analysis/blob/main/Images/employee_numbers_comparison.png)
 
+The employee has a pretty significant task ahead to fill the roles of the retirees with eligible new hires.  Along with this influx of new employees, a mentorship program should be put in place where select retirees will be chosen to train current employees who are eligible for promotion to higher positions within the company. 
 
+According to the flawed numbers, of the total ***240,124*** total current employees at Pewlett Hackard, ***90,398*** are eligible to retire.  This represents almost **38%** of the total workforce.  The actual adjusted numbers aren't much better though.  The adjustment shows a total of ***72,458***  eligible retirees.  This adjustment shows a total of **30%** of the total workforce.  
 
-
-
-
-
-## Pewlett Hackard Human Resources Analysis Summary
-
--- ****NOTE**** The Deliverable 1 instructions indicate to create a table that holds "current employees", but in the 
--- confirmation image it clearly shows employee 10011 Mary Sluis who is no longer with the company.  Because the request 
--- is to confirm that the table looks like that image no attempt was made to filter out former employees.  However, based
--- on the information that is generated from these queries, the total number of eligible retirees is going to overstated.
--- This erroneous reporting could be alleviated by adding an additional filter for "current employees" after the birth_date filter.
--- This would also negate the need to filter for most recent title in the second portion of Deliverable 1 by using the DISTINCT ON
--- method.  For the sake of this module challenge, I've written queries that will deliver the expected results.  Please take this 
--- into consideration in the grading of this challenge and consider adjustments to the prompts for future bootcamp cohorts.  This
--- ambiguity is the source of wasting time that could be better focused on learning more skills related to the subject matter, rather 
--- than speculating on what the intent of the assignment was.
-
-Additional queries to run to assist with the analysis.
-Total current employee roster
-
+The parameters for the mentorship program show only ***1,549*** 
 
 90398 about to retire
 240124 total current workforce
@@ -68,4 +52,10 @@ Adjusted numbers
 240124 total current workforce
 
 30.2% of total current workforce about to retire
+
+
+## Pewlett Hackard Human Resources Analysis Summary
+Because there are only ***1,549*** eligible employees for the mentorship program, time is of the essence to get new employees on the books as quickly as possible.  The total number of remaining employees is ***167,666***.  This represents a ratio of just over **100 to 1** for each mentor.  The parameters for eligible mentors may need to be widened in order to offer a more reasonable ratio.  
+
+
 
